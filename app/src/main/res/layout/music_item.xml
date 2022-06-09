@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+
+        <TextView
+            android:id="@+id/textViewTitleMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Freaks" />
+
+        <TextView
+            android:id="@+id/textViewLabelDescription"
+            style="@style/LabelMargin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Описание: "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitleMusic" />
+
+        <TextView
+            android:id="@+id/textViewLabelLanguage"
+            style="@style/LabelMargin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Язык: "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDescription" />
+
+        <TextView
+            android:id="@+id/textViewYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@id/textViewTitleMusic"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewTitleMusic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="2019" />
+
+        <TextView
+            android:id="@+id/textViewDescription"
+            style="@style/LabelText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewLabelDescription"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBaseline_toBaselineOf="@id/textViewLabelDescription"
+            app:layout_constraintStart_toEndOf="@+id/textViewLabelDescription"
+            app:layout_constraintTop_toTopOf="@id/textViewLabelDescription"
+            tools:text="TextView" />
+
+        <TextView
+            android:id="@+id/textViewLanguage"
+            style="@style/LabelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/textViewLabelLanguage"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDescription"
+            tools:text="TextView" />
+
+        <ImageView
+            android:id="@+id/imageViewPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewLanguage"
+            app:srcCompat="@drawable/play" />
+
+        <ImageView
+            android:id="@+id/imageViewPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toStartOf="@id/imageViewReset"
+            app:layout_constraintStart_toEndOf="@+id/imageViewPlay"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLanguage"
+            app:srcCompat="@drawable/pause" />
+
+        <ImageView
+            android:id="@+id/imageViewReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLanguage"
+            app:srcCompat="@drawable/reset" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MusicApplication</string>
+    <string-array name="spinnerLanguage">
+        <item>Русский</item>
+        <item>Английский</item>
+        <item>Немецкий</item>
+        <item>Испанский</item>
+        <item>Итальянский</item>
+    </string-array>
+    
+    <string-array name="spinnerMusic">
+        <item>Freak</item>
+        <item>Группа крови</item>
+        <item>Hdmi</item>
+        <item>Ginseng Strip 2002</item>
+        <item>Звезда по Имени Солнце</item>
+    </string-array>
+</resources>
